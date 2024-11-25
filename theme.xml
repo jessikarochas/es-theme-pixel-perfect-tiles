@@ -117,24 +117,6 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
     <include name="7x7" displayName="7X7"/>
   </subset>
 
-    <!-- GRID COLORS -->
-  <subset name="sysgridcolor" displayName="System Grid Background">
-    <include name="brown" displayName="Brown"/>
-    <include name="gold" displayName="Gold"/>
-    <include name="yellow" displayName="Yellow"/>
-    <include name="black" displayName="Black/White"/>
-    <include name="tertiary" displayName="None"/>
-  </subset>
-
-  <subset name="gamegridcolor" displayName="Gamelist Grid Background">
-    <include name="tertiary" displayName="None"/>
-    <include name="brown" displayName="Brown"/>
-    <include name="gold" displayName="Gold"/>
-    <include name="yellow" displayName="Yellow"/>
-    <include name="black" displayName="Black"/>
-    <include name="white" displayName="White"/>
-  </subset>
-
     <!-- CONFIG FILES -->
   <include>./gamelistview/grid.xml</include>
   <include>./gamelistview/gridthumbnails.xml</include>
