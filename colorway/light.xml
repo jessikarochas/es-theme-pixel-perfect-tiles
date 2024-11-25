@@ -9,13 +9,13 @@ Website:  games.jessikarocha.com
 	<formatVersion>7</formatVersion>
         <variables>
             <colorSchemeName>light</colorSchemeName>
-            <backgroundColor>f9eed9</backgroundColor>
-            <backgroundColor2>f9eed9</backgroundColor2>
+            <backgroundColor>d8cbc4</backgroundColor>
+            <backgroundColor2>d8cbc4</backgroundColor2>
             <mainColor>488bf7</mainColor>
             <highlightColor>82f0ff</highlightColor>
             <secondaryColor>57392d</secondaryColor>
             <tertiaryColor>858585</tertiaryColor>
-            <cardColor>d8cbc4</cardColor>
+            <cardColor>F7F3F0</cardColor>
             <systemColor>3aa5ab</systemColor>
             <placeholderColor>f9eed9</placeholderColor>
         </variables>		
