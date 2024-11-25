@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Theme: es-theme-tiled
+author: Claudio Filipe
+license: creative commons CC-BY-NC-SA
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="menu">
+  
+    <menuText name="menutitle">
+      <fontSize>${fontSizeMenuTitle}</fontSize>
+      <fontPath>${fontPath}</fontPath>
+      <color>${secondaryColor}</color>
+    </menuText>
+  
+    <menuText name="menutext">
+      <fontSize>${fontSizeMenu}</fontSize>
+      <fontPath>${fontPath}</fontPath>
+      <color>${secondaryColor}</color>
+      <separatorColor>${tertiaryColor}</separatorColor>
+      <selectorColor>${secondaryColor}</selectorColor>
+      <selectorColorEnd>${secondaryColor}</selectorColorEnd>
+      <selectedColor>${backgroundColor}</selectedColor>
+      <selectorGradientType>horizontal</selectorGradientType>
+    </menuText>
+
+    <menuTextSmall name="menutextsmall">
+      <fontSize>${fontSizeMenuSmall}</fontSize>
+      <fontPath>${fontPath}</fontPath>
+      <color>${tertiaryColor}</color>
+    </menuTextSmall>
+  
+    <menuBackground name="menubg">
+      <color>${backgroundColor}</color>
+      <cornerSize>32 32</cornerSize>
+      <scrollbarColor>${secondaryColor}</scrollbarColor>
+      <scrollbarCorner>0.49</scrollbarCorner>
+      <scrollbarSize>0.003</scrollbarSize>
+      <scrollbarAlignment>innerright</scrollbarAlignment>
+    </menuBackground>
+  
+    <menuText name="menufooter">
+      <fontSize>${fontSizeMenuFooter}</fontSize>
+      <fontPath>${fontPath}</fontPath>
+      <color>${tertiaryColor}</color>
+    </menuText>
+  
+    <menuTextEdit name="menutextedit">
+      <inactive>./colorway/${colorSchemeName}_inactive.png</inactive>
+      <active>./colorway/${colorSchemeName}_active.png</active>
+    </menuTextEdit>
+
+    <menuGroup name="menugroup">
+      <fontSize>${fontSizeMenuGroup}</fontSize>
+      <fontPath>${fontPath}</fontPath>
+      <color>${secondaryColor}</color>
+      <backgroundColor>${backgroundColor}</backgroundColor>
+      <lineSpacing>2.5</lineSpacing>
+    </menuGroup>
+  </view>
+</theme>

@@ -1,0 +1,198 @@
+﻿<!--
+Theme name:  Pixel Perfect
+Author:   Jessika Rocha
+Website:  games.jessikarocha.com
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <corners>8 * ${screen.height} / 1080</corners>
+    <borderFrame>${themePath}/art/framewsel.png</borderFrame>
+    <grid.itemspacing.px>12 * ${screen.height} / 1080</grid.itemspacing.px>
+    <grid.paddingtop>0.04</grid.paddingtop>
+  </variables>
+  <view name="system">
+    <imagegrid name="imagegrid">
+      <zIndex>20</zIndex>
+      <pos>0.005 0.04</pos>
+      <size>0.99 0.91</size>
+      <autoLayout ifSubset="sysgridsize:1x1">1 1</autoLayout>
+      <autoLayout ifSubset="sysgridsize:1x2">1 2</autoLayout>
+      <autoLayout ifSubset="sysgridsize:1x3">1 3</autoLayout>
+      <autoLayout ifSubset="sysgridsize:1x4">1 4</autoLayout>
+      <autoLayout ifSubset="sysgridsize:1x5">1 5</autoLayout>
+      <autoLayout ifSubset="sysgridsize:1x6">1 6</autoLayout>
+      <autoLayout ifSubset="sysgridsize:1x7">1 7</autoLayout>
+      <autoLayout ifSubset="sysgridsize:2x1">2 1</autoLayout>
+      <autoLayout ifSubset="sysgridsize:2x2">2 2</autoLayout>
+      <autoLayout ifSubset="sysgridsize:2x3">2 3</autoLayout>
+      <autoLayout ifSubset="sysgridsize:2x4">2 4</autoLayout>
+      <autoLayout ifSubset="sysgridsize:2x5">2 5</autoLayout>
+      <autoLayout ifSubset="sysgridsize:2x6">2 6</autoLayout>
+      <autoLayout ifSubset="sysgridsize:2x7">2 7</autoLayout>
+      <autoLayout ifSubset="sysgridsize:3x1">3 1</autoLayout>
+      <autoLayout ifSubset="sysgridsize:3x2">3 2</autoLayout>
+      <autoLayout ifSubset="sysgridsize:3x3">3 3</autoLayout>
+      <autoLayout ifSubset="sysgridsize:3x4">3 4</autoLayout>
+      <autoLayout ifSubset="sysgridsize:3x5">3 5</autoLayout>
+      <autoLayout ifSubset="sysgridsize:3x6">3 6</autoLayout>
+      <autoLayout ifSubset="sysgridsize:3x7">3 7</autoLayout>
+      <autoLayout ifSubset="sysgridsize:4x1">4 1</autoLayout>
+      <autoLayout ifSubset="sysgridsize:4x2">4 2</autoLayout>
+      <autoLayout ifSubset="sysgridsize:4x3">4 3</autoLayout>
+      <autoLayout ifSubset="sysgridsize:4x4">4 4</autoLayout>
+      <autoLayout ifSubset="sysgridsize:4x5">4 5</autoLayout>
+      <autoLayout ifSubset="sysgridsize:4x6">4 6</autoLayout>
+      <autoLayout ifSubset="sysgridsize:4x7">4 7</autoLayout>
+      <autoLayout ifSubset="sysgridsize:5x1">5 1</autoLayout>
+      <autoLayout ifSubset="sysgridsize:5x2">5 2</autoLayout>
+      <autoLayout ifSubset="sysgridsize:5x3">5 3</autoLayout>
+      <autoLayout ifSubset="sysgridsize:5x4">5 4</autoLayout>
+      <autoLayout ifSubset="sysgridsize:5x5">5 5</autoLayout>
+      <autoLayout ifSubset="sysgridsize:5x6">5 6</autoLayout>
+      <autoLayout ifSubset="sysgridsize:5x7">5 7</autoLayout>
+      <autoLayout ifSubset="sysgridsize:6x1">6 1</autoLayout>
+      <autoLayout ifSubset="sysgridsize:6x2">6 2</autoLayout>
+      <autoLayout ifSubset="sysgridsize:6x3">6 3</autoLayout>
+      <autoLayout ifSubset="sysgridsize:6x4">6 4</autoLayout>
+      <autoLayout ifSubset="sysgridsize:6x5">6 5</autoLayout>
+      <autoLayout ifSubset="sysgridsize:6x6">6 6</autoLayout>
+      <autoLayout ifSubset="sysgridsize:6x7">6 7</autoLayout>
+      <autoLayout ifSubset="sysgridsize:7x1">7 1</autoLayout>
+      <autoLayout ifSubset="sysgridsize:7x2">7 2</autoLayout>
+      <autoLayout ifSubset="sysgridsize:7x3">7 3</autoLayout>
+      <autoLayout ifSubset="sysgridsize:7x4">7 4</autoLayout>
+      <autoLayout ifSubset="sysgridsize:7x5">7 5</autoLayout>
+      <autoLayout ifSubset="sysgridsize:7x6">7 6</autoLayout>
+      <autoLayout ifSubset="sysgridsize:7x7">7 7</autoLayout>
+      <autoLayout ifSubset="sysgridsize:automatic">0 3</autoLayout>
+      <cellProportion>1.1</cellProportion>
+      <margin>${grid.itemspacing.px}</margin>
+      <padding>0.03 0.009 0.03 0.011</padding>
+      <scrollbarColor>${secondaryColor}</scrollbarColor>
+      <scrollbarCorner>0.49</scrollbarCorner>
+      <scrollbarSize>0.005</scrollbarSize>
+      <scrollbarAlignment>right</scrollbarAlignment>
+        
+      <itemTemplate>
+        <storyboard event="activate">
+          <animation property="scale" to="1.05" duration="150" mode="easeOut"/>
+        </storyboard>
+        <storyboard event="deactivate">
+          <animation property="scale" to="1" duration="250" mode="easeOut"/>
+        </storyboard>
+        <image name="background" extra="true">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <zIndex>2</zIndex>
+          <visible>true</visible>
+          <color>${cardColor}</color>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <storyboard event="activate" repeat="forever">
+            <animation property="color" from="${cardColor}" to="${secondaryColor}"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="color" from="${secondaryColor}" to="${cardColor}"/>
+          </storyboard>
+        </image>
+        <image name="backgroundInner" extra="true">
+          <origin>0.5 0.5</origin>
+          <pos>0.5 0.5</pos>
+          <size>1 1</size>
+          <zIndex>3</zIndex>
+          <color>182580</color>
+          <color ifSubset="sysgridcolor:tertiary">${cardColor}</color>
+          <color  ifSubset="colorway:light" ifSubset="sysgridcolor:gold">F4EBDC</color>
+          <color ifSubset="colorway:dark" ifSubset="sysgridcolor:gold">BE8F3C</color>
+          <color ifSubset="sysgridcolor:yellow">ffce2b</color>
+          <color ifSubset="colorway:light" ifSubset="sysgridcolor:black">f1f0f0</color>
+          <color ifSubset="colorway:dark" ifSubset="sysgridcolor:black">31343A</color>
+          <color ifSubset="colorway:light" ifSubset="sysgridcolor:brown">D7C6B4</color>
+          <color ifSubset="colorway:dark" ifSubset="sysgridcolor:brown">AB8B7A</color>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <scale>0.963</scale>
+        </image>
+        <image name="SystemArtShade" extra="true">
+          <origin>0 0</origin>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <zIndex>2</zIndex>
+          <visible>true</visible>
+          <color>000000</color>
+          <opacity>${shadeStrength}</opacity>
+          <path>./_inc/images/bg_color.png</path>
+          <roundCorners>${corners}</roundCorners>
+          <storyboard event="activate">
+            <animation property="opacity" from="${shadeStrength}" to="0" duration="150" mode="linear"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="opacity" from="0" to="${shadeStrength}" duration="150" mode="linear"/>
+          </storyboard>
+          <zIndex>30</zIndex>
+        </image>
+        <text name="fallbackText" alignment="center" multiLine="true">
+          <visible>!exists("${themePath}/art/logos/" + {system:theme} + ".png") && !exists("${themePath}/art/logos/" + {system:theme} + ".svg") </visible>
+          <text>{system:fullName}</text>
+          <fontSize>0.04</fontSize>
+          <color>white</color>
+          <glowOffset>1 1</glowOffset>
+          <glowColor>0000002a</glowColor>
+          <glowSize>3</glowSize>
+          <scale>0.8</scale>
+          <zIndex>10</zIndex>
+        </text>
+        <image name="LogoDropShadow" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true">
+          <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+          <padding>3 3 -3 -3</padding>
+          <color>00000080</color>
+          <zIndex>5</zIndex>
+          <scale>0.8</scale>
+        </image>
+        <image name="LogoImage" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true">
+          <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+          <zIndex>6</zIndex>
+          <scale>0.8</scale>
+          <storyboard event="activate">
+            <animation property="color" from="FFFFFFB3" to="FFFFFFFF"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="color" from="FFFFFFFF" to="FFFFFFB3"/>
+          </storyboard>
+        </image>
+      </itemTemplate>
+
+
+    </imagegrid>
+    <image name="background" extra="true">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <zIndex>2</zIndex>
+      <visible>true</visible>
+      <color>${backgroundColor}</color>
+      <path>./_inc/images/bg_color.png</path>
+    </image>
+    <text name="systemInfo">
+      <visible>false</visible>
+    </text>
+    <text name="mySystemInfo" extra="true">
+      <text>{system:fullName} ({system:total} Games)</text>
+      <text if="{system.name} == 'screenshots'" >{system:fullName} ({system:total} Images)</text>
+      <text if="{system.name} == 'retrobat'" >{system:fullName} ({system:total} Emulators)</text>
+      <size>1 0</size>
+      <pos ifSubset="fontsize:small">0.0 0.007</pos>
+      <pos ifSubset="fontsize:medium">0.0 0.005</pos>
+      <pos ifSubset="fontsize:large">0.0 0.001</pos>
+      <alignment>center</alignment>
+      <color>${secondaryColor}</color>
+      <fontPath>${fontPath}</fontPath>
+      <fontSize>${fontSizeHeader}</fontSize>
+      <zIndex>5</zIndex>
+    </text>
+  </view>
+</theme>

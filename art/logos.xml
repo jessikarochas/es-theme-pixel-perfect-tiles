@@ -1,0 +1,14 @@
+﻿<!--
+Theme name:  Pixel Perfect
+Author:   Jessika Rocha
+Website:  games.jessikarocha.com
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+        <variables>
+            <artstyle>carbon</artstyle>
+            <artextension>png</artextension>
+        </variables>
+</theme>

@@ -1,0 +1,269 @@
+<!--
+Theme name:  Pixel Perfect
+Author:      Jessika Rocha
+Artwork:     Jessika Rocha
+Website:     games.jessikarocha.com
+
+Fonts used:  Crang, VCR OSD Mono
+
+# Thanks and Credits
+
+ARTWORK:
+Pixel Logos and Icons: 
+      - Starvingartist (Stanley Sy) [www.iconarchive.com]
+      - Jessika Rocha [games.jessikarocha.com]
+
+# License
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Please see README.md for full details.
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme defaultView="grid">
+  <formatVersion>7</formatVersion>
+  <variables>
+    <shadeStrength>0.3</shadeStrength>
+  </variables>
+
+    <!-- WHAT TO SHOW ON GAME LIST -->
+  <subset name="factbox" displayName="Factbox">
+    <include name="mediadesc" displayName="Media + Description"/>
+    <include name="mix" displayName="Media + Details + Description"/>
+    <include name="description" displayName="Description"/>
+    <include name="no" displayName="None"/>
+  </subset>
+
+    <!-- VIDEO DELAY -->
+  <subset name="playvideo" displayName="Video">
+    <include name="yes1s" displayName="1s delay"/>
+    <include name="yes2s" displayName="2s delay"/>
+    <include name="yes5s" displayName="5s delay"/>
+    <include name="hide" displayName="Don't Play"/>
+  </subset>
+
+    <!-- COLOR SCHEME -->
+  <subset name="colorway" displayName="Color Scheme">
+    <include name="light" displayName="Light">./colorway/light.xml</include>
+    <include name="dark" displayName="Dark">./colorway/dark.xml</include>
+  </subset>
+
+    <!-- FONTS AND SIZES -->
+  <subset name="font" displayName="Font">
+    <include name="vcr" displayName="VCR OSD Mono">./options/fontvcr.xml</include>
+    <include name="gb" displayName="GameBoy">./options/fontgb.xml</include>
+  </subset>
+
+  <subset name="fontsize" displayName="Font Size">
+    <include name="medium" displayName="Medium">./options/fontmedium.xml</include>
+    <include name="small" displayName="Small">./options/fontsmall.xml</include>
+    <include name="large" displayName="Large">./options/fontlarge.xml</include>
+  </subset>
+
+    <!-- SYSTEM LOGOS -->
+  <include name="logos">./art/logos.xml</include>
+
+    <!-- SYSTEM VIEW -->
+  <include>./systemview/grid.xml</include>
+
+  <subset name="sysgridsize" displayName="System Grid Size">
+    <include name="automatic" displayName="Automatic"/>
+    <include name="1x1" displayName="1X1"/>
+    <include name="1x2" displayName="1X2"/>
+    <include name="1x3" displayName="1X3"/>
+    <include name="1x4" displayName="1X4"/>
+    <include name="1x5" displayName="1X5"/>
+    <include name="1x6" displayName="1X6"/>
+    <include name="1x7" displayName="1X7"/>
+    <include name="2x1" displayName="2X1"/>
+    <include name="2x2" displayName="2X2"/>
+    <include name="2x3" displayName="2X3"/>
+    <include name="2x4" displayName="2X4"/>
+    <include name="2x5" displayName="2X5"/>
+    <include name="2x6" displayName="2X6"/>
+    <include name="2x7" displayName="2X7"/>
+    <include name="3x1" displayName="3X1"/>
+    <include name="3x2" displayName="3X2"/>
+    <include name="3x3" displayName="3X3"/>
+    <include name="3x4" displayName="3X4"/>
+    <include name="3x5" displayName="3X5"/>
+    <include name="3x6" displayName="3X6"/>
+    <include name="3x7" displayName="3X7"/>
+    <include name="4x1" displayName="4X1"/>
+    <include name="4x2" displayName="4X2"/>
+    <include name="4x3" displayName="4X3"/>
+    <include name="4x4" displayName="4X4"/>
+    <include name="4x5" displayName="4X5"/>
+    <include name="4x6" displayName="4X6"/>
+    <include name="4x7" displayName="4X7"/>
+    <include name="5x1" displayName="5X1"/>
+    <include name="5x2" displayName="5X2"/>
+    <include name="5x3" displayName="5X3"/>
+    <include name="5x4" displayName="5X4"/>
+    <include name="5x5" displayName="5X5"/>
+    <include name="5x6" displayName="5X6"/>
+    <include name="5x7" displayName="5X7"/>
+    <include name="6x1" displayName="6X1"/>
+    <include name="6x2" displayName="6X2"/>
+    <include name="6x3" displayName="6X3"/>
+    <include name="6x4" displayName="6X4"/>
+    <include name="6x5" displayName="6X5"/>
+    <include name="6x6" displayName="6X6"/>
+    <include name="6x7" displayName="6X7"/>
+    <include name="7x1" displayName="7X1"/>
+    <include name="7x2" displayName="7X2"/>
+    <include name="7x3" displayName="7X3"/>
+    <include name="7x4" displayName="7X4"/>
+    <include name="7x5" displayName="7X5"/>
+    <include name="7x6" displayName="7X6"/>
+    <include name="7x7" displayName="7X7"/>
+  </subset>
+
+    <!-- GRID COLORS -->
+  <subset name="sysgridcolor" displayName="System Grid Background">
+    <include name="brown" displayName="Brown"/>
+    <include name="gold" displayName="Gold"/>
+    <include name="yellow" displayName="Yellow"/>
+    <include name="black" displayName="Black/White"/>
+    <include name="tertiary" displayName="None"/>
+  </subset>
+
+  <subset name="gamegridcolor" displayName="Gamelist Grid Background">
+    <include name="tertiary" displayName="None"/>
+    <include name="brown" displayName="Brown"/>
+    <include name="gold" displayName="Gold"/>
+    <include name="yellow" displayName="Yellow"/>
+    <include name="black" displayName="Black"/>
+    <include name="white" displayName="White"/>
+  </subset>
+
+    <!-- CONFIG FILES -->
+  <include>./gamelistview/grid.xml</include>
+  <include>./gamelistview/gridthumbnails.xml</include>
+  <include>./gamelistview/gridmarquees.xml</include>
+  <include>./gamelistview/gridcartridges.xml</include>
+  <include>./gamelistview/detailed.xml</include>
+  <include>./gamelistview/basic.xml</include>
+  <include>./menu.xml</include>
+  <include>./options/factbox_mix.xml</include>
+  <include>./options/factbox_det.xml</include>
+  <include>./options/factbox_mediadesc.xml</include>
+  <include>./options/factbox_desc.xml</include>
+
+  <view name="system,grid,detailed,basic">
+    <image name="background" extra="true">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <zIndex>2</zIndex>
+      <visible>true</visible>
+      <color>${backgroundColor}</color>
+      <path>./_inc/images/bg_color.png</path>
+    </image>
+
+
+    <helpsystem name="help">
+      <fontSize>${fontSizeFooter}</fontSize>
+      <pos>0.012 0.957</pos>
+      <size>0.3 0.07</size>
+      <textColor>${secondaryColor}</textColor>
+      <iconColor>${secondaryColor}</iconColor>
+      <fontPath>${fontPath}</fontPath>
+      <iconA>:/help/buttons_east.svg</iconA>
+      <iconB>:/help/buttons_south.svg</iconB>
+      <iconX>:/help/buttons_north.svg</iconX>
+      <iconY>:/help/buttons_west.svg</iconY>
+
+      <iconUpDown>./_inc/iconset/updown.png</iconUpDown>
+      <iconLeftRight>./_inc/iconset/leftright.png</iconLeftRight>
+     <iconUpDownLeftRight>./_inc/iconset/all.png</iconUpDownLeftRight>
+      <iconA>./_inc/iconset/a.png</iconA>
+      <iconB>./_inc/iconset/b.png</iconB>
+      <iconX>./_inc/iconset/x.png</iconX>
+      <iconY>./_inc/iconset/y.png</iconY>
+      <iconL>./_inc/iconset/l.png</iconL>
+      <iconR>./_inc/iconset/r.png</iconR>
+      <iconStart>./_inc/iconset/start.png</iconStart>
+      <iconSelect>./_inc/iconset/select.png</iconSelect>
+
+    </helpsystem>
+  </view>
+
+  <view name="grid,detailed,basic">
+    <image name="systemLogo" extra="true">
+      <maxSize>0.200 0.039</maxSize>
+      <pos>0.012 0.005</pos>
+      <padding>0.005 0.005 0.005 0.005</padding>
+      <horizontalAlignment>left</horizontalAlignment>
+      <verticalAlignment>center</verticalAlignment>
+      <path>firstfile("${themePath}/art/logos/" + {system:theme} + ".png","${themePath}/art/logos/" + {system:theme} + ".svg")</path>
+    </image>
+  </view>
+
+  <view name="screen">
+    <batteryIndicator name="batteryIndicator">
+      <visible>false</visible>
+    </batteryIndicator>
+    <text name="clock">
+      <visible>false</visible>
+    </text>
+
+    <controllerActivity name="controllerActivity">
+      <pos>0.737 0.957</pos>
+      <size ifSubset="fontsize:small">0.250 0.019</size>
+      <size ifSubset="fontsize:medium">0.250 0.023</size>
+      <size ifSubset="fontsize:large">0.250 0.027</size>
+      <itemSpacing>0.003</itemSpacing>
+      <horizontalAlignment>right</horizontalAlignment>
+      <color>${secondaryColor}</color>
+      <imagePath>./art/gamepad.svg</imagePath>
+      <gunPath>./art/gun.svg</gunPath>
+      <wheelPath>./art/wheel.svg</wheelPath>
+      <activityColor>${tertiaryColor}</activityColor>
+      <hotkeyColor>${tertiaryColor}</hotkeyColor>
+    </controllerActivity>
+
+    <stackpanel name="system-indicators" extra="true">
+      <visible>true</visible>
+      <h>${fontSizeHeader}</h>
+      <size>0.3 0.1</size>
+      <pos ifSubset="fontsize:small">0.684 0.013</pos>
+      <pos ifSubset="fontsize:medium">0.684 0.010</pos>
+      <pos ifSubset="fontsize:large">0.684 0.007</pos>
+      <orientation>horizontal</orientation>
+      <separator>6</separator>
+      <horizontalAlignment>right</horizontalAlignment>
+      <reverse>true</reverse>
+      <zIndex>55</zIndex>
+      <clock name="system-clock" extra="true">
+        <color>${secondaryColor}</color>
+        <fontSize>${fontSizeHeader}</fontSize>
+        <fontPath>${fontPath}</fontPath>
+        <lineSpacing>1</lineSpacing>
+      </clock>
+      <batteryText name="system-battery-text" extra="true">
+        <color>${secondaryColor}</color>
+        <fontSize>${fontSizeHeader}</fontSize>
+        <fontPath>${fontPath}</fontPath>
+        <lineSpacing>1</lineSpacing>
+      </batteryText>
+      <batteryIcon name="system-battery-icon" extra="true">
+        <maxSize>1 0.88</maxSize>
+        <color>${secondaryColor}</color>
+        <full>./_inc/images/battery-icon-100.svg</full>
+        <at75>./_inc/images/battery-icon-75.svg</at75>
+        <at50>./_inc/images/battery-icon-50.svg</at50>
+        <at25>./_inc/images/battery-icon-25.svg</at25>
+        <empty>./_inc/images/battery-icon-0.svg</empty>
+        <incharge>./_inc/images/battery-icon-charging.svg</incharge>
+        <lineSpacing>1</lineSpacing>
+      </batteryIcon>
+      <networkIcon name="system-network-icon" extra="true">
+        <maxSize>1 0.88</maxSize>
+        <color>${secondaryColor}</color>
+        <networkIcon>./_inc/images/network-icon-on.svg</networkIcon>
+        <planemodeIcon>./_inc/images/network-icon-off.svg</planemodeIcon>
+        <lineSpacing>1</lineSpacing>
+      </networkIcon>
+    </stackpanel>
+  </view>
+
+</theme>

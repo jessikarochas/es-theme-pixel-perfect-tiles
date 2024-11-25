@@ -1,0 +1,22 @@
+﻿<!--
+Theme name:  Pixel Perfect
+Author:   Jessika Rocha
+Website:  games.jessikarocha.com
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+        <variables>
+            <colorSchemeName>light</colorSchemeName>
+            <backgroundColor>F7F3F0</backgroundColor>
+            <backgroundColor2>F7F3F0</backgroundColor2>
+            <mainColor>488bf7</mainColor>
+            <highlightColor>82f0ff</highlightColor>
+            <secondaryColor>57392d</secondaryColor>
+            <tertiaryColor>858585</tertiaryColor>
+            <cardColor>F7F3F0</cardColor>
+            <systemColor>3aa5ab</systemColor>
+            <placeholderColor>F7F3F0</placeholderColor>
+        </variables>		
+</theme>

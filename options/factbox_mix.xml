@@ -1,0 +1,148 @@
+<!--
+Theme name:  Pixel Perfect
+Author:      Jessika Rocha
+Artwork:     Jessika Rocha
+Website:     games.jessikarocha.com
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    <view name="grid" ifSubset="factbox:mix">
+
+        <text name="GameName" extra="true">
+            <text>{game:name}</text>
+            <pos>0.66 0.08</pos>
+            <size>0.33 0.027</size>
+            <alignment>left</alignment>
+            <color>${secondaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+        <text name="labelGameTime" extra="true">
+            <text>PLAY TIME</text>
+            <pos>0.66 0.155</pos>
+            <size>0.33 0.017</size>
+            <alignment>left</alignment>
+            <color>${tertiaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+        <text name="GameTime" extra="true">
+            <text>expandseconds({game:gametime})</text>
+            <pos>0.67 0.205</pos>
+            <size>0.33 0.017</size>
+            <alignment>left</alignment>
+            <color>${secondaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+        <text name="GameTimeNone" extra="true">
+            <text>None</text>
+            <pos>0.67 0.205</pos>
+            <size>0.33 0.017</size>
+            <alignment>left</alignment>
+            <color>${secondaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <visible>empty(expandseconds({game:gametime}))</visible>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+
+        <text name="labelPlayCount" extra="true">
+            <text>TIMES PLAYED</text>
+            <pos>0.66 0.255</pos>
+            <size>0.33 0.017</size>
+            <alignment>left</alignment>
+            <color>${tertiaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+        <text name="playCount" extra="true">
+            <text>{game:playcount}</text>
+            <pos>0.67 0.305</pos>
+            <size>0.33 0.017</size>
+            <alignment>left</alignment>
+            <color>${secondaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+
+
+        <text name="labelLastPlayed" extra="true">
+            <text>LAST PLAYED</text>
+            <pos>0.66 0.355</pos>
+            <size>0.33 0.017</size>
+            <alignment>left</alignment>
+            <color>${tertiaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+        <datetime name="md_lastplayed" extra="true">
+            <pos>0.67 0.405</pos>
+            <size>0.33 0.017</size>
+            <alignment>left</alignment>
+            <color>${secondaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </datetime >
+
+
+        <text name="md_description">
+            <text>{game:desc}</text>
+            <pos>0.66 0.455</pos>
+            <size>0.33 0.45</size>
+            <alignment>left</alignment>
+            <horizontalAlignment>top</horizontalAlignment>
+            <color>${secondaryColor}</color>
+            <fontSize>${fontSizeText}</fontSize>
+            <zIndex>5</zIndex>
+            <fontPath>${fontPath}</fontPath>
+        </text>
+
+    </view>
+
+    <customView name="gridthumbnails,gridmarquees,gridcartridges" ifSubset="factbox:mix">
+
+        <image name="videoBackground" extra="true">
+            <pos>0.872 0.20</pos>
+            <size>0.24 0.365</size>
+            <origin>0.5 0.5</origin>
+            <zIndex>9</zIndex>
+            <visible>true</visible>
+            <color>${backgroundColor}</color>
+            <path>./_inc/images/bg_color.png</path>
+            <opacity>0</opacity>
+            <storyboard event="activate" ifSubset="playvideo:yes1s">
+                <animation enabled="exists({game:video})" property="opacity" from="0" to="1" begin="2100"/>
+            </storyboard>
+            <storyboard event="activate" ifSubset="playvideo:yes2s">
+                <animation enabled="exists({game:video})" property="opacity" from="0" to="1" begin="3100"/>
+            </storyboard>
+            <storyboard event="activate" ifSubset="playvideo:yes5s">
+                <animation enabled="exists({game:video})" property="opacity" from="0" to="1" begin="6100"/>
+            </storyboard>
+        </image>
+
+        <video name="md_video">
+            <pos>0.872 0.213</pos>
+            <origin>0.5 0.5</origin>
+            <effect>none</effect>
+            <horizontalAlignment>center</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <maxSize>0.235 0.331</maxSize>
+            <delay ifSubset="playvideo:yes1s">1.5</delay>
+            <delay ifSubset="playvideo:yes2s">2.5</delay>
+            <delay ifSubset="playvideo:yes5s">5.5</delay>
+            <zIndex>10</zIndex>
+        </video>
+    </customView>
+
+</theme>

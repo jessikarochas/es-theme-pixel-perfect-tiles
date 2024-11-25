@@ -1,0 +1,24 @@
+<!--
+Theme name:  Pixel Perfect
+Author:      Jessika Rocha
+Artwork:     Jessika Rocha
+Website:     games.jessikarocha.com
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    <variables>
+        <fontSizeText>0.022</fontSizeText>
+        <fontSizeTextList>0.031</fontSizeTextList>
+        <fontSizeLabel>0.022</fontSizeLabel>
+        <fontSizeHeader>0.028</fontSizeHeader>
+        <fontSizeMenu>0.028</fontSizeMenu>
+        <fontSizeMenuSmall>0.018</fontSizeMenuSmall>
+        <fontSizeMenuGroup>0.02</fontSizeMenuGroup>
+        <fontSizeMenuTitle>0.036</fontSizeMenuTitle>
+        <fontSizeMenuFooter>0.022</fontSizeMenuFooter>
+        <fontSizeFooter>0.027</fontSizeFooter>
+    </variables>
+</theme>
+
