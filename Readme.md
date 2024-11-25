@@ -21,8 +21,8 @@ The Pixel Perfect Tiles theme was designed exclusively for the retro handheld co
 
 # Screenshots
 
-![home](./art/images/home.png)
-![gamelist01](./art/images/gamelist01.png)
+![home](./art/images/home.jpg)
+![gamelist01](./art/images/gamelist01.jpg)
 
 # License
 
