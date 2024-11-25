@@ -21,6 +21,8 @@ The Pixel Perfect Tiles theme was designed exclusively for the retro handheld co
 
 # Screenshots
 
+I use a MacBook and couldn't find a way to take screenshots from the screen, if you can, I would appreciate. :) 
+
 ![home](./art/images/home.jpg)
 ![gamelist01](./art/images/gamelist01.jpg)
 
