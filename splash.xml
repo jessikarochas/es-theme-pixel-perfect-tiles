@@ -18,12 +18,12 @@ Website:     games.jessikarocha.com
             <size>1 1</size>
             <zIndex>0</zIndex>
             <visible>true</visible>
-            <color>${backgroundColor}</color>
-            <path>./_inc/images/bg_color.png</path>
+            <path ifSubset="colorway:dark">./art/splash/default-dark.png</path>
+            <path ifSubset="colorway:light">./art/splash/default-light.png</path>
         </image>
 
         <text name="label">
-            <color>${secondaryColor}</color>
+            <color>F7F3F0</color>
             <forceUppercase>false</forceUppercase>
             <fontPath ifSubset="font:vcr">./_inc/fonts/VCR_OSD_MONO_1.001.ttf</fontPath>
             <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
@@ -35,13 +35,13 @@ Website:     games.jessikarocha.com
 			<pos>0.250 0.703</pos>
 			<rotation>0</rotation>
 			<rotationOrigin>1.1 1.6</rotationOrigin>
-			<color>${tertiaryColor}</color>
+			<color>F7F3F0</color>
 		</image>        
 
 		<image name="progressbar:active">
             <pos>0.250 0.703</pos>
-			<color>${secondaryColor}</color>
-			<colorEnd>${secondaryColor}</colorEnd>
+			<color>1D1916</color>
+			<colorEnd>1D1916</colorEnd>
 			<gradientType>vertical</gradientType>
 		</image>
 
