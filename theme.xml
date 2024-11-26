@@ -24,6 +24,12 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
     <shadeStrength>0.3</shadeStrength>
   </variables>
 
+    <!-- COLOR SCHEME -->
+  <subset name="colorway" displayName="Color Scheme">
+    <include name="light" displayName="Light">./colorway/light.xml</include>
+    <include name="dark" displayName="Dark">./colorway/dark.xml</include>
+  </subset>
+
     <!-- WHAT TO SHOW ON GAME LIST -->
   <subset name="factbox" displayName="Factbox">
     <include name="mediadesc" displayName="Media + Description"/>
@@ -38,12 +44,6 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
     <include name="yes2s" displayName="2s delay"/>
     <include name="yes5s" displayName="5s delay"/>
     <include name="hide" displayName="Don't Play"/>
-  </subset>
-
-    <!-- COLOR SCHEME -->
-  <subset name="colorway" displayName="Color Scheme">
-    <include name="light" displayName="Light">./colorway/light.xml</include>
-    <include name="dark" displayName="Dark">./colorway/dark.xml</include>
   </subset>
 
     <!-- FONTS AND SIZES -->

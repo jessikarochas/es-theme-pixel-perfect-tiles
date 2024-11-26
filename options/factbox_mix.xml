@@ -18,7 +18,7 @@ Website:     games.jessikarocha.com
             <color>${secondaryColor}</color>
             <fontSize>${fontSizeText}</fontSize>
             <zIndex>5</zIndex>
-            <fontPath>${fontPath}</fontPath>
+      <fontPath>./_inc/fonts/Crang.ttf</fontPath>
         </text>
         <text name="labelGameTime" extra="true">
             <text>PLAY TIME</text>

@@ -12,7 +12,7 @@ license: creative commons CC-BY-NC-SA
   
     <menuText name="menutitle">
       <fontSize>${fontSizeMenuTitle}</fontSize>
-      <fontPath>${fontPath}</fontPath>
+      <fontPath>./_inc/fonts/Crang.ttf</fontPath>
       <color>${secondaryColor}</color>
     </menuText>
   
