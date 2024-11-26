@@ -1,9 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<!--
+﻿<!--
 Theme: es-theme-tiled
 author: Claudio Filipe
 license: creative commons CC-BY-NC-SA
 -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
 <theme>
   <formatVersion>7</formatVersion>
   <view name="menu">

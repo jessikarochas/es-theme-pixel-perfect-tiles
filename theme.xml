@@ -149,10 +149,6 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
       <textColor>${secondaryColor}</textColor>
       <iconColor>${secondaryColor}</iconColor>
       <fontPath>${fontPath}</fontPath>
-      <iconA>:/help/buttons_east.svg</iconA>
-      <iconB>:/help/buttons_south.svg</iconB>
-      <iconX>:/help/buttons_north.svg</iconX>
-      <iconY>:/help/buttons_west.svg</iconY>
 
       <iconUpDown>./_inc/iconset/updown.png</iconUpDown>
       <iconLeftRight>./_inc/iconset/leftright.png</iconLeftRight>
