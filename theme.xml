@@ -147,7 +147,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
       <pos>0.012 0.957</pos>
       <size>0.3 0.07</size>
       <textColor>${secondaryColor}</textColor>
-      <iconColor>${secondaryColor}</iconColor>
+      <iconColor>${cardColor}</iconColor>
       <fontPath>${fontPath}</fontPath>
 
       <iconUpDown>./_inc/iconset/updown.png</iconUpDown>

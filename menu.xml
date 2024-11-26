@@ -60,5 +60,23 @@ license: creative commons CC-BY-NC-SA
       <backgroundColor>${backgroundColor}</backgroundColor>
       <lineSpacing>2.5</lineSpacing>
     </menuGroup>
+      
+      <menuIcons name="menuicons">
+      <iconSystem>./_inc/inconset/cog.svg</iconSystem>
+      <iconUpdates>./_inc/inconset/update.svg</iconUpdates>
+      <iconControllers>./_inc/inconset/gamepad-round.svg</iconControllers>
+      <iconGames>./_inc/inconset/gamepad-square.svg</iconGames>
+      <iconUI>./_inc/inconset/brush.svg</iconUI>
+      <iconSound>./_inc/inconset/volume-high.svg</iconSound>
+      <iconNetwork>./_inc/inconset/wifi-strength-3.svg</iconNetwork>
+      <iconScraper>./_inc/inconset/image.svg</iconScraper>
+      <iconAdvanced>./_inc/inconset/library-shelves.svg</iconAdvanced>
+      <iconQuit>./_inc/inconset/exit-to-app.svg</iconQuit>
+      <iconRetroachievements>./_inc/inconset/trophy.svg</iconRetroachievements>
+      <iconKodi>./_inc/inconset/kodi.svg</iconKodi>
+      <iconRestart>./_inc/inconset/restart.svg</iconRestart>
+      <iconShutdown>./_inc/inconset/power.svg</iconShutdown>
+      <iconFastShutdown>./_inc/inconset/power.svg</iconFastShutdown>
+    </menuIcons>
   </view>
 </theme>
