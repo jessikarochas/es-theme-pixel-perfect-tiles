@@ -10,7 +10,7 @@ Website:     games.jessikarocha.com
     <formatVersion>7</formatVersion>
     <view name="grid" ifSubset="factbox:mix">
 
-        <text name="GameName" extra="true">
+       <!-- <text name="GameName" extra="true">
             <text>{game:name}</text>
             <pos>0.66 0.08</pos>
             <size>0.33 0.027</size>
@@ -19,10 +19,10 @@ Website:     games.jessikarocha.com
             <fontSize>${fontSizeText}</fontSize>
             <zIndex>5</zIndex>
       <fontPath>./_inc/fonts/Crang.ttf</fontPath>
-        </text>
+        </text>-->
         <text name="labelGameTime" extra="true">
             <text>PLAY TIME</text>
-            <pos>0.66 0.155</pos>
+            <pos>0.66 0.08</pos>
             <size>0.33 0.017</size>
             <alignment>left</alignment>
             <color>${tertiaryColor}</color>
@@ -32,7 +32,7 @@ Website:     games.jessikarocha.com
         </text>
         <text name="GameTime" extra="true">
             <text>expandseconds({game:gametime})</text>
-            <pos>0.67 0.205</pos>
+            <pos>0.67 0.155</pos>
             <size>0.33 0.017</size>
             <alignment>left</alignment>
             <color>${secondaryColor}</color>
@@ -42,7 +42,7 @@ Website:     games.jessikarocha.com
         </text>
         <text name="GameTimeNone" extra="true">
             <text>None</text>
-            <pos>0.67 0.205</pos>
+            <pos>0.67 0.155</pos>
             <size>0.33 0.017</size>
             <alignment>left</alignment>
             <color>${secondaryColor}</color>
@@ -54,7 +54,7 @@ Website:     games.jessikarocha.com
 
         <text name="labelPlayCount" extra="true">
             <text>TIMES PLAYED</text>
-            <pos>0.66 0.255</pos>
+            <pos>0.66 0.205</pos>
             <size>0.33 0.017</size>
             <alignment>left</alignment>
             <color>${tertiaryColor}</color>
@@ -64,7 +64,7 @@ Website:     games.jessikarocha.com
         </text>
         <text name="playCount" extra="true">
             <text>{game:playcount}</text>
-            <pos>0.67 0.305</pos>
+            <pos>0.67 0.255</pos>
             <size>0.33 0.017</size>
             <alignment>left</alignment>
             <color>${secondaryColor}</color>
@@ -76,7 +76,7 @@ Website:     games.jessikarocha.com
 
         <text name="labelLastPlayed" extra="true">
             <text>LAST PLAYED</text>
-            <pos>0.66 0.355</pos>
+            <pos>0.66 0.305</pos>
             <size>0.33 0.017</size>
             <alignment>left</alignment>
             <color>${tertiaryColor}</color>
@@ -85,7 +85,7 @@ Website:     games.jessikarocha.com
             <fontPath>${fontPath}</fontPath>
         </text>
         <datetime name="md_lastplayed" extra="true">
-            <pos>0.67 0.405</pos>
+            <pos>0.67 0.355</pos>
             <size>0.33 0.017</size>
             <alignment>left</alignment>
             <color>${secondaryColor}</color>
@@ -97,8 +97,8 @@ Website:     games.jessikarocha.com
 
         <text name="md_description">
             <text>{game:desc}</text>
-            <pos>0.66 0.455</pos>
-            <size>0.33 0.45</size>
+            <pos>0.66 0.405</pos>
+            <size>0.33 0.53</size>
             <alignment>left</alignment>
             <horizontalAlignment>top</horizontalAlignment>
             <color>${secondaryColor}</color>
