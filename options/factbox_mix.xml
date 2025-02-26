@@ -22,7 +22,7 @@ Website:     games.jessikarocha.com
         </text>-->
         <text name="labelGameTime" extra="true">
             <text>PLAY TIME</text>
-            <pos>0.66 0.08</pos>
+            <pos>0.66 0.105</pos>
             <size>0.33 0.017</size>
             <alignment>left</alignment>
             <color>${tertiaryColor}</color>
