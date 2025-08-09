@@ -35,7 +35,7 @@ Some logos were taken from [Starvingartist's (Stanley Sy) Antiseptic Videogame I
 
 The [fonts](./assets/fonts/) are free from [dafont.com](www.dafont.com).
 
-All the files, code and images not mentioned above are licensed under the [MIT License](./LICENSE).
+All the files, code and images not mentioned above are licensed under the [MIT License](./LICENSE.md).
 
 <br>
 
